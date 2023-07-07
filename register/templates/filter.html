@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authors and Sellers</title>
+</head>
+<body>
+    <h1>Authors and Sellers</h1>
+    <h3> &emsp; Name &emsp;&emsp; email</h3>
+    <ol>
+        {% for user in users %}
+            <li>{{ user.username }} &emsp;&emsp; {{user.email}}</li>
+            
+        {% empty %}
+            <li>No authors or sellers found.</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

@@ -41,7 +41,7 @@ def login(request):
             print(auth_user)
             if auth_user is not None:
                 auth_login(request, auth_user)
-                send_login_notification(auth_user)
+                # send_login_notification(auth_user)
                 return redirect('index')
             else: 
                 return redirect('login') 
